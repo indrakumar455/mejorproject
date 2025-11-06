@@ -1,0 +1,80 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+}
+.container{
+    background-color: gray;
+    border: 5px solid yellow;
+    height: 100vh;
+    text-transform: capitalize;
+}
+.apply-box{
+    background-color: white;
+     margin: 30px auto;
+    max-width: 600px;
+    height: 90vh;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px  5px rgb(86, 80, 80);
+    text-transform:capitalize;
+    
+}
+.apply-box h1{
+    font-size: bolder;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+   
+}
+.web{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.apply-box:hover{
+    box-shadow: 5px 5px  5px rgb(206, 227, 101);
+}
+
+.form {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-size: 13px;
+}
+input:focus{
+    outline-color: rgb(132, 86, 86);
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+button{
+    padding: 5px 10px;
+     background-color: black;
+    color: white;
+    border:transparent solid 2px;
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+}
