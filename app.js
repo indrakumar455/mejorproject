@@ -100,7 +100,9 @@ app.use("/", userrouter);
 //     res.redirect("/listing");
 // }));
 
-
+app.get("/", (req, res) => {
+  res.redirect("/listing");
+});
 
 app.use((req, res, next) => {
   next(new ExpressError(404, "page not found"));
